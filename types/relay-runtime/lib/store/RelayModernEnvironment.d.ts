@@ -25,6 +25,7 @@ import { RelayObservable } from '../network/RelayObservable';
 export interface EnvironmentConfig {
     readonly configName?: string;
     readonly handlerProvider?: HandlerProvider | null;
+    readonly treatMissingFieldsAsNull?: boolean;
     readonly log?: LogFunction | null;
     readonly operationLoader?: OperationLoader | null;
     readonly network: Network;
